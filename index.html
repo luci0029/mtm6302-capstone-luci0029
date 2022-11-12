@@ -1,12 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
+
+
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-------------------navbar beggingins---------------->
+    <nav class="navbar Primary (#3B71CA)
+    navbar-expand-sm navbar-dark ">
+        <!--logo-->
+        <span><img class="logo" src="images/NASA-Logo-1959-present.png" alt="nasa logo" width="155px" height="80px"></span>
+
+        <!----hambuger menu-->
+        <button
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            class="navbar-toggler"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria aria-label="toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--items in navbar-->
+        <div class="collapse navbar-collapse"
+        id="navbarNav">
+        <ul class="navbar-nav">
+
+            <li class="nav-item active">
+                <a href="#" class="nav-link active">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a href="#" class="nav-link">
+                    Archive
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a href="#" class="nav-link">
+                    Submissions
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a href="#" class="nav-link">
+                    Calendar
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a href="#" class="nav-link">
+                    Favorites
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a href="#" class="nav-link">
+                    Index
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    </nav>
+    <!---------------------navbar ends------------------------>
+
+    <!-----------------Tittle--------------------->
+    <div class="container1">
+
+        <h1 class="tittleweb">
+            ASTRONOMY
+            <br>
+            PICTURE OF THE DAY
+        </h1>
+
+        <h1 class="tittlemobile">
+          ASTRONOMY PICTURE OF THE DAY
+      </h1>
+    
+        <form>
+            <div class="dateholder">
+                <label for="date" class="form-label">Date:</label>
+                <input class="form-control form-control-sm" type="text" name="date" id="date" value="" placeholder="date" >
+            </div>
+        </form>
+
+    </div>
+
+    <!---------------subheading------------------------->
+    <h2 class="cosmos">
+        Discover the cosmos!
+    </h2>
+
+    <p class="definition">
+        Every day a different image or photograph of our fascinating universe is feautured, along with a brief explenation 
+        written by a professional astronomer.
+    </p>
+
+    <h2 class="date">
+        2022 September 27
+    </h2>
+
+    <!-----------------image w descriptive text------------>
+    
+
+    <div class="description">
+      
+        <span>
+
+          <div class="row justify-content-sm-center">
+            <div class="col-2"> </div>
+            <div class="yesterday2 col-4">
+              <a href="https">Yesterday</a>
+          </div>
+        
+          <div class="tomorrow2 col-4">
+              <a href="https">Tomorrow</a>
+          </div>
+          <div class="col-2"> </div>
+          </div>
+
+            <img src="images/space.jpeg" alt="space image" width="700px" height="400px" >
+        
+
+         <!--web links-->
+            <div class="row justify-content-md-center">
+              <div class="yesterday col-4">
+              <a href="https">Yesterday</a>
+            </div>
+
+            <div class="tomorrow col-4">
+                <a href="https">Tomorrow</a>
+            </div>
+            </div>
+
+          </span>
+    
+        <p>
+            <strong class="definition3">
+                 Impact on Asteroid Dimorphos
+                 <br>
+                 Video Credit: NASA, JHUAPL, DART
+            </strong>
+        </p>
+            
+         <p class="definition">   
+            Could humanity deflect an asteroid headed for Earth? Yes. Deadly impacts from large asteroids have happened before in Earth's past, sometimes causing mass extinctions of life. To help protect our Earth from some potential future impacts, NASA tested a new planetary defense mechanism yesterday by crashing the robotic Double Asteroid Redirection Test (DART) 
+        </p>
+
+        <p class="definition2">   
+          Could humanity deflect an asteroid headed for Earth? Yes. Deadly impacts from large asteroids have happened before in Earth's past, sometimes causing mass extinctions of life. To help protect our Earth from some potential future impacts, NASA tested a new planetary defense mechanism yesterday by crashing the robotic Double Asteroid Redirection Test (DART) spacecraft into Dimorphos, a small asteroid spanning about 170-meters across. As shown in the featured video, the impact was a success. Ideally, if impacted early enough, even the kick from a small spacecraft can deflect a large asteroid enough to miss the Earth. In the video, DART is seen in a time-lapse video first passing larger Didymos, on the left, and then approaching the smaller Dimorphos. Although the video ends abruptly with DART's crash, observations monitoring the changed orbit of Dimorphos -- from spacecraft and telescopes around the world -- have just begun.      </p>
+        
+
+        <div class="Read">
+          <a href="https">Read More</a>
+      </div>
+
+
+
+    </div>
+
+    <!---------Links to go to the next/previous day images-------------->
+
+    <footer class="Primary (#3B71CA)
+    text-white text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <p>
+              Authors & editors: Robert Nemiroff (MTU) & Jerry Bonnell (UMCP)
+              NASA Official: Phillip Newman Specific rights apply.
+              NASA Web Privacy Policy and Important Notices
+              A service of: ASD at NASA / GSFC,
+              NASA Science Activation
+              & Michigan Tech. U.
+            </p>
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">    
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">ABOUT</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">EDUCATION</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">DISCUSS</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">FAVORITES</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">RSS</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="http://ferkrpk.com/">ferkrpk.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>
