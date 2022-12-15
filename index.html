@@ -11,17 +11,18 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Picture of The Day</title>
   </head>
   <body>
 
     <!-------------------navbar beggingins---------------->
-    <nav class="navbar Primary (#3B71CA)
+    <nav class="navbar $dark (#000)
     navbar-expand-sm navbar-dark ">
         <!--logo-->
         <span><img class="logo" src="images/NASA-Logo-1959-present.png" alt="nasa logo" width="155px" height="80px"></span>
+        
 
-        <!----hambuger menu-->
+        <!---hambuger menu-->
         <button
             type="button"
             data-bs-toggle="collapse"
@@ -64,7 +65,7 @@
             </li>
 
             <li class="nav-item active">
-                <a href="#" class="nav-link">
+                <a href="favorites.html" class="nav-link">
                     Favorites
                 </a>
             </li>
@@ -78,107 +79,88 @@
         </ul>
     </div>
     </nav>
-    <!---------------------navbar ends------------------------>
+    <!-------------------navbar ends------------------------>
 
-    <!-----------------Tittle--------------------->
-    <div class="container1">
+    <!-------------------tittle and form------------------------>
 
-        <h1 class="tittleweb">
-            ASTRONOMY
-            <br>
-            PICTURE OF THE DAY
-        </h1>
+    <!--<div id="apod">-->
 
-        <h1 class="tittlemobile">
-          ASTRONOMY PICTURE OF THE DAY
-      </h1>
-    
+      <header>
+        <div class="text">
+          <h1>ASTRONOMY PICTURE OF THE DAY</h1>
+        </div>
+        <!--Calendar form-->
         <form>
-            <div class="dateholder">
-                <label for="date" class="form-label">Date:</label>
-                <input class="form-control form-control-sm" type="text" name="date" id="date" value="" placeholder="date" >
+            <div id="form" class="form">
+                <label for="date" class="form-label" id="Calendar">Enter a date</label>
+                <input class="form-control form-control-sm" type="date" name="date" id="date" value="" placeholder="date" >
             </div>
+
+            <br>
+    
+                
+            <button id="search">
+              Search
+            </button>
         </form>
 
-    </div>
 
-    <!---------------subheading------------------------->
-    <h2 class="cosmos">
-        Discover the cosmos!
-    </h2>
-
-    <p class="definition">
-        Every day a different image or photograph of our fascinating universe is feautured, along with a brief explenation 
-        written by a professional astronomer.
-    </p>
-
-    <h2 class="date">
-        2022 September 27
-    </h2>
-
-    <!-----------------image w descriptive text------------>
-    
-
-    <div class="description">
-      
-        <span>
-
-          <div class="row justify-content-sm-center">
-            <div class="col-2"> </div>
-            <div class="yesterday2 col-4">
-              <a href="https">Yesterday</a>
-          </div>
-        
-          <div class="tomorrow2 col-4">
-              <a href="https">Tomorrow</a>
-          </div>
-          <div class="col-2"> </div>
-          </div>
-
-            <img src="images/space.jpeg" alt="space image" width="700px" height="400px" >
-        
-
-         <!--web links-->
-            <div class="row justify-content-md-center">
-              <div class="yesterday col-4">
-              <a href="https">Yesterday</a>
-            </div>
-
-            <div class="tomorrow col-4">
-                <a href="https">Tomorrow</a>
-            </div>
-            </div>
-
-          </span>
-    
-        <p>
-            <strong class="definition3">
-                 Impact on Asteroid Dimorphos
-                 <br>
-                 Video Credit: NASA, JHUAPL, DART
-            </strong>
+        <p class="definition">
+          Every day a different image or photograph of our fascinating universe is feautured, along with a brief explenation 
+          written by a professional astronomer.
         </p>
+    </header>
+      <!--img API content-->
+            <section class="display">
+              <div id="imgx" class="imgx"></div>
+
+              <div class="description">
+              
+                      <h2>
+                        <strong id="fecha" class="fecha"></strong>
+                      </h2>
             
-         <p class="definition">   
-            Could humanity deflect an asteroid headed for Earth? Yes. Deadly impacts from large asteroids have happened before in Earth's past, sometimes causing mass extinctions of life. To help protect our Earth from some potential future impacts, NASA tested a new planetary defense mechanism yesterday by crashing the robotic Double Asteroid Redirection Test (DART) 
-        </p>
+                      <h1>
+                          <strong class="title" id="title"></strong>
+                      </h1>
+                          
+                      <p class="explanation" id="explanation"></p>
+                    
+                </div>
+            </section>
 
-        <p class="definition2">   
-          Could humanity deflect an asteroid headed for Earth? Yes. Deadly impacts from large asteroids have happened before in Earth's past, sometimes causing mass extinctions of life. To help protect our Earth from some potential future impacts, NASA tested a new planetary defense mechanism yesterday by crashing the robotic Double Asteroid Redirection Test (DART) spacecraft into Dimorphos, a small asteroid spanning about 170-meters across. As shown in the featured video, the impact was a success. Ideally, if impacted early enough, even the kick from a small spacecraft can deflect a large asteroid enough to miss the Earth. In the video, DART is seen in a time-lapse video first passing larger Didymos, on the left, and then approaching the smaller Dimorphos. Although the video ends abruptly with DART's crash, observations monitoring the changed orbit of Dimorphos -- from spacecraft and telescopes around the world -- have just begun.      </p>
-        
+            <!--Like Button-->
+              <button type="button" id="heartbutton" class="likebtn">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M91.6 13A28.7 28.7 0 0 0 51 13l-1 1-1-1A28.7 28.7 0 0 0 8.4 53.8l1 1L50 95.3l40.5-40.6 1-1a28.6 28.6 0 0 0 0-40.6z"/></svg>
+                  Like
+              </button>
 
-        <div class="Read">
-          <a href="https">Read More</a>
-      </div>
+              <div class="favs_remove">
+                <button type="button" id="remove" class="icon_remove">
+                  Unlike
+                </button>
+              </div>
+             
 
+              <!--Fav Section-->
+              <main id="fav_main">
+                <section id="fav_section">
+                  <h2>Favorites</h2>
 
+                  
+                <div id="fav_content">
+                  <h2></h2>
+                  <img class="fav" src="" >
+                </div>
 
-    </div>
+              </main>
+                </section>
+                
+           
+              
+          <!--Footer-->
 
-    <!---------Links to go to the next/previous day images-------------->
-
-    <footer class="Primary (#3B71CA)
-    text-white text-center text-lg-start">
+    <footer class=" text-white text-center text-lg-start"   style="background-color: rgb(0, 0, 0)">
       <!-- Grid container -->
       <div class="container p-4">
         <!--Grid row-->
@@ -227,8 +209,10 @@
       </div>
       <!-- Grid container -->
     
+      <div id="apod"></div>
+
       <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center p-3" style="background-color: rgb(0, 0, 0);">
         © 2020 Copyright:
         <a class="text-white" href="http://ferkrpk.com/">ferkrpk.com</a>
       </div>
@@ -238,6 +222,6 @@
     
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
   </body>
 </html>

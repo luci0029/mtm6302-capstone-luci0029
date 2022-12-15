@@ -1,20 +1,17 @@
 
 /********CSS***********/
 nav{
-    background-color: rgb(43, 45, 168);
+    background-color: rgb(0, 0, 0);
 }
 
 h1{
     margin: 40px;
     font-family: 'Times New Roman', Times, serif;
     padding-top: 1rem;
-}
-
-h2{
-    margin: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     font-weight: bold;
 }
+
 
 p{
     margin: 30px;
@@ -22,6 +19,101 @@ p{
     font-size: 18px;
 }
 
+button{
+    color: rgb(135, 192, 245);
+    background-color: white;
+    border-color: rgb(135, 192, 245);
+}
+
+header{
+    background-image:url(images/darkspace.jpg);
+    background-color: #194c9f;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: rgb(135, 192, 245);
+    text-align: center;
+}
+
+.nextday{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.fav_main{
+    width: 50%;
+    display: flex;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+
+ /*img from API */
+ .imgx  {
+    width:60%;
+    margin: 3px;
+    display: flex;
+    float: left;
+ }
+
+.imgx img{
+ width: 100%;
+}
+    
+.appear {
+    display: block;
+    position: fixed;
+    /* position: absolute; */
+    margin: 0px;
+    z-index: 999;
+    /* top: 0; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*Like Button*/
+  #heartbutton {
+    color:#000000;
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px 14px 5px;
+    line-height: 3px;
+    cursor: pointer;
+    transition: color 150ms ease-in-out, background-color 150ms ease-in-out, transform 150ms ease-in-out;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .heart {
+    display: inline-block;
+    fill: currentColor;
+    margin-right: 5px;
+    width: 13px;
+    height: 13px;
+    align-items: center;
+  }
+
+  #heartbutton:hover{
+    color: #194c9f;
+  }
+  
+  .like{
+    background-color: rgb(135, 192, 245);;
+    border-color: rgb(135, 192, 245);;
+  }
+
+  
+  
+  
 /**********MOBILE*************/
 @media screen and (max-width: 912px) {
 
@@ -29,20 +121,6 @@ p{
         width: 100px;
     }
 
-    .tittleweb{
-        display: none;
-    }
-
-    .tittlemobile{
-        font-size: 22px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .container1{
-        align-items: center;
-        justify-content: space-between;
-    }
 
     .dateholder{
         display: flex;
@@ -62,25 +140,18 @@ p{
         font-size: 22px;
     }
 
-    .definition3{
+    .definitiontittle{
         align-items: center;
         font-size: 17px;
     }
 
-    .definition2{
-        display: none;
-    }
+    
 
     .date{
         font-weight: bold;
     }
 
 
-    img{
-        width: 100%;
-        height: 100%;
-        padding: 15px;
-    }
 
     .yesterday{
         display: none;
@@ -98,16 +169,14 @@ p{
 
 
     footer{
-        background-color: #194c9f;
+        background-color: #000000;
     }
   }
 
 
   @media (min-width: 1350px) and (max-width: 1605px){
 
-.tittlemobile{
-    display: none;
-}
+
 
 .dateholder{
     display: flex;
@@ -129,10 +198,6 @@ p{
     justify-content: space-between;
 }
 
-.description{
-    display: flex;
-    padding-left: 40px;
-}
 
 .yesterday2{
     display: none;
@@ -162,9 +227,7 @@ p{
     display: none;
 }
 
-.definition{
-    display: none;
-}
+
 
 footer{
     background-color: rgb(43, 45, 168);
